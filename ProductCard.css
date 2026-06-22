@@ -1,0 +1,138 @@
+/* ProductCard.css */
+.product-card {
+  background-color: #16161a;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.product-image-container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #1e1e24;
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: clamp(0.8rem, 4vw, 1.2rem);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-title {
+  font-size: clamp(0.95rem, 3vw, 1.1rem);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #f0f0f0;
+  line-height: 1.4;
+}
+
+.product-price {
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-weight: 700;
+  color: #00d4ff;
+  margin-bottom: 0.8rem;
+}
+
+.product-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #1e1e24;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.quantity-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #a0a0b0;
+}
+
+.quantity-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00d4ff;
+}
+
+.add-to-cart-btn {
+  background: linear-gradient(135deg, #2a2a35 0%, #1f1f28 100%);
+  border: 1px solid #3a3a44;
+  color: #ffffff;
+  padding: clamp(0.5rem, 2vw, 0.7rem) clamp(0.8rem, 3vw, 1rem);
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(135deg, #3a3a48 0%, #2a2a35 100%);
+  border-color: #00d4ff;
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    border-radius: 12px;
+  }
+  .product-info {
+    padding: 0.75rem;
+  }
+  .product-quantity {
+    margin-bottom: 0.75rem;
+  }
+}
+/* أضف هذا الكود إلى ProductCard.css */
+.product-quantity-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #1e1e24;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.qty-label {
+  font-size: 0.8rem;
+  color: #a0a0b0;
+  font-weight: 500;
+}
+
+.qty-number {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00d4ff;
+}

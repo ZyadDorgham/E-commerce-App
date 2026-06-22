@@ -1,0 +1,222 @@
+
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  color: #f0f0f0;
+  background-color: #0a0a0c;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #ffffff, #00d4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #a0a0b0;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, #16161a, #1e1e24);
+  padding: 1.8rem 1.2rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #2a2a2e;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.contact-card.whatsapp:hover {
+  border-color: #25d366;
+}
+
+.contact-card.email:hover {
+  border-color: #00d4ff;
+}
+
+.contact-card.phone:hover {
+  border-color: #ff6b6b;
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #f0f0f0;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: #c0c0c0;
+  margin-bottom: 0.4rem;
+}
+
+.contact-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: #1e1e28;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+  color: #a0a0b0;
+  border: 1px solid #3a3a44;
+}
+
+.contact-form-container {
+  background: linear-gradient(135deg, #16161a, #0e0e12);
+  padding: 2rem;
+  border-radius: 24px;
+  border: 1px solid #2a2a2e;
+}
+
+.contact-form-container h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00d4ff;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #c0c0c0;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: #1e1e24;
+  border: 1px solid #3a3a44;
+  border-radius: 12px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6a6a7a;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  border: none;
+  color: #0a0a0c;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.send-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+}
+
+.send-btn:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 1.5rem 1rem;
+  }
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  .contact-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+  .send-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+  .contact-header h1 {
+    font-size: 1.6rem;
+  }
+  .contact-form-container h2 {
+    font-size: 1.3rem;
+  }
+  .contact-form-container {
+    padding: 1rem;
+  }
+  .send-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+  }
+}

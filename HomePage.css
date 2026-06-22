@@ -1,0 +1,150 @@
+/* components/HomePage.css */
+.homepage {
+  background-color: #0a0a0c;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0a0a0c 0%, #1a1a2e 100%);
+  padding: 5rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #2a2a2e;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff, #00d4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #c0c0c0;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  background: linear-gradient(135deg, #00d4ff, #0099cc);
+  border: none;
+  color: #0a0a0c;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+}
+
+.features {
+  padding: 4rem 2rem;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: #16161a;
+  padding: 2rem 1rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 212, 255, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #f0f0f0;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #a0a0b0;
+  font-size: 0.9rem;
+}
+
+.about-store {
+  background-color: #0e0e12;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-top: 1px solid #2a2a2e;
+  border-bottom: 1px solid #2a2a2e;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-store h2 {
+  font-size: 2.2rem;
+  color: #00d4ff;
+  margin-bottom: 1.5rem;
+}
+
+.about-store p {
+  color: #c0c0c0;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .features-container {
+    gap: 1rem;
+  }
+  .feature-card {
+    padding: 1.5rem 0.8rem;
+  }
+  .about-store h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+}
